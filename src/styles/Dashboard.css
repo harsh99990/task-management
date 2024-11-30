@@ -1,0 +1,51 @@
+body,
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow-x: auto;
+    height: 100%;
+}
+
+.status-column {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* min-width: 300px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.status-column h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.status-column .task-card {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

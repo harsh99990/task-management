@@ -1,0 +1,57 @@
+.add-edit-task {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-edit-task h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-form label {
+    margin: 10px 0 5px;
+    color: #34495e;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+    padding: 8px 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.task-form textarea {
+    resize: vertical;
+    height: 100px;
+    resize: none;
+}
+
+.task-form .error {
+    padding-top: 2px;
+    color: red;
+    font-size: 0.9rem;
+}
+
+.task-form button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #27ae60;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.task-form button:hover {
+    background-color: #219150;
+}
